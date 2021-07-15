@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<title>Happy Birthday</title>
+<body>
+
+
+<link rel="stylesheet" href="mario-styles.css">
+
+<script src="mario.js">
+</script>
+
+
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+        <div class="container">
+            <div class="balloon">
+                <div><span>☺</span>
+                </div>
+                <div><span>B</span>
+                </div>
+                <div><span>D</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>Y</span>
+                </div>
+                <div><span>!</span>
+                </div>
+            </div>
+            <h1>ÁNGELA</h1>
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+        <div class="m-p-g">
+            <div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Hola Ángela, te saluda Marito jejeje. Esta página es cortita pero es con todo el cariño del mundo para tu bday jeje </p>
+                 </body>
+                <img src="ang1.jpeg" data-full="http://unsplash.it/1280/900?image=906" class="m-p-g__thumbs-img" />
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Este ha sido un año horrible por el covid, lo sé. La has pasado mal, el encierro es penca y la pega no ayuda, pero hey los stickers no faltaron </p>
+                 </body>
+                <img src="spongebob.jpg" data-full="spongebob" class="m-p-g__thumbs-img" />
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Babe te quiero mucho, eres una persona maravillosa que se merece lo mejor del mundo, espero que la estadía en este mundo junto a este dumdum sea un peco menos latera ajajaja solo te quería decir que te quiero mucho y que te deseo lo mejor en la vida y mucho potitos de gatos </p>
+                 </body>
+                 <img src="ang2.jpeg" data-full="spongebob" class="m-p-g__thumbs-img" />
+                 <img src="ang3.jpeg" data-full="spongebob" class="m-p-g__thumbs-img" />
+                 <img src="ang4.jpeg" data-full="spongebob" class="m-p-g__thumbs-img" />
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Te tengo tu primer regalito, voy a repetir un viejo clásico del año pasado jeje  </p>
+                 </body>
+                <img src="yoga.jpg" data-full="yoga" class="m-p-g__thumbs-img" />
+                <body>
+                    <a href="https://youtu.be/P_yZ_3bZ7Xw">Presiona acá</a>
+                 </body>
+                 <body>
+                    <p style="color:rgb(252, 252, 253)">En verdad intente hacerte un dibujo mas bonito, pero no me salió para nada como quería :c ajajaja, pero aquí hay un pequeño doodle para que después vea como mejoraré con la tablet jeje  </p>
+                 </body>
+                <img src="dibujo.JPG" data-full="http://unsplash.it/1120/1000?image=677" class="m-p-g__thumbs-img" />
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Este regalo te lo tenía hace tiempo porque me habías dicho que lo querías, pero se que no has estado en el mood de eso actualmente pero espero que igual lo disfrutes igual ajaja </p>
+                 </body>
+                 <img src="wow1.JPG" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+                 <img src="wow2.JPG" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+                 <img src="wow3.JPG" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+                 <img src="wow4.JPG" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+                 <body>
+                    <p style="color:rgb(252, 252, 253)">Este regalo tiene una historia, había una vez un ogro feo, gordo y tonto, y una princesa hermosa que vivía en una calle llamada La Gloria. Un día el ogro intento hablar con la princesa pero estaba borracho y solo logro asustarla. Por suerte, se volvieron a encontrar otro día y descubrieron que a los dos les gustaba el equipo de futbol Interpol y fueron a ver un partido juntos. Luego fueron a un bar a tomar emborracharse con gatos, fueron a un casamiento, subieron una torre de arena, bailaron en la calle con extraños, fueron atacados por el tenebroso rey Corona, estuvieron con otro Mario en la playa, se bañaron en tina a la orilla de la laguna (?) y muchas cosas mas. El ogro se dio cuenta que tenía que hacer un regalo especial para su princesa, pero no podía solo, necesitaba la ayuda de sus amigos y juntos lograron armar este pequeño presente para esta bella dama. Para saber cual es el regalo debes adivinar que es, si yo soy tu shrek, tu eres mi...?? </p>
+                 </body>
+                <img src="shrek.jpg" data-full="http://unsplash.it/1340/820?image=401" class="m-p-g__thumbs-img" />
+                <body>
+                    <p style="color:rgb(252, 252, 253)">Babe te quiero mucho, eres una persona maravillosa que se merece lo mejor del mundo, espero que la estadía en este mundo junto a este dumdum sea un peco menos latera ajajaja solo te quería decir que te quiero mucho y que te deseo lo mejor en la vida y mucho potitos de gatos </p>
+                 </body>
+
+            </div>
+    	    <div class="m-p-g__fullscreen"></div>
+        </div>
+
+</body>
+</html>
+
+
+
+<script>
+    let W = window.innerWidth;
+    let H = window.innerHeight;
+    const canvas = document.getElementById("canvas");
+    const context = canvas.getContext("2d");
+    const maxConfettis = 150;
+    const particles = [];
+
+    const possibleColors = [
+    "DodgerBlue",
+    "OliveDrab",
+    "Gold",
+    "Pink",
+    "SlateBlue",
+    "LightBlue",
+    "Gold",
+    "Violet",
+    "PaleGreen",
+    "SteelBlue",
+    "SandyBrown",
+    "Chocolate",
+    "Crimson"
+    ];
+
+    function randomFromTo(from, to) {
+    return Math.floor(Math.random() * (to - from + 1) + from);
+    }
+
+    function confettiParticle() {
+    this.x = Math.random() * W; // x
+    this.y = Math.random() * H - H; // y
+    this.r = randomFromTo(11, 33); // radius
+    this.d = Math.random() * maxConfettis + 11;
+    this.color =
+        possibleColors[Math.floor(Math.random() * possibleColors.length)];
+    this.tilt = Math.floor(Math.random() * 33) - 11;
+    this.tiltAngleIncremental = Math.random() * 0.07 + 0.05;
+    this.tiltAngle = 0;
+
+    this.draw = function() {
+        context.beginPath();
+        context.lineWidth = this.r / 2;
+        context.strokeStyle = this.color;
+        context.moveTo(this.x + this.tilt + this.r / 3, this.y);
+        context.lineTo(this.x + this.tilt, this.y + this.tilt + this.r / 5);
+        return context.stroke();
+    };
+    }
+
+    function Draw() {
+    const results = [];
+
+    // Magical recursive functional love
+    requestAnimationFrame(Draw);
+
+    context.clearRect(0, 0, W, window.innerHeight);
+
+    for (var i = 0; i < maxConfettis; i++) {
+        results.push(particles[i].draw());
+    }
+
+    let particle = {};
+    let remainingFlakes = 0;
+    for (var i = 0; i < maxConfettis; i++) {
+        particle = particles[i];
+
+        particle.tiltAngle += particle.tiltAngleIncremental;
+        particle.y += (Math.cos(particle.d) + 3 + particle.r / 2) / 2;
+        particle.tilt = Math.sin(particle.tiltAngle - i / 3) * 15;
+
+        if (particle.y <= H) remainingFlakes++;
+
+        // If a confetti has fluttered out of view,
+        // bring it back to above the viewport and let if re-fall.
+        if (particle.x > W + 30 || particle.x < -30 || particle.y > H) {
+        particle.x = Math.random() * W;
+        particle.y = -30;
+        particle.tilt = Math.floor(Math.random() * 10) - 20;
+        }
+    }
+
+    return results;
+    }
+
+    window.addEventListener(
+    "resize",
+    function() {
+        W = window.innerWidth;
+        H = window.innerHeight;
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    },
+    false
+    );
+
+    // Push new confetti objects to `particles[]`
+    for (var i = 0; i < maxConfettis; i++) {
+    particles.push(new confettiParticle());
+    }
+
+    // Initialize
+    canvas.width = W;
+    canvas.height = H;
+    Draw();
+
+</script>
+
+
+
+
+
+
+
+
+
+
